@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "557355299582",
+    "project_id": "intershala-assignment1",
+    "storage_bucket": "intershala-assignment1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557355299582:android:ea99749123fc382bfaabaf",
+        "android_client_info": {
+          "package_name": "com.example.intershala_assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557355299582-b91ahpsvpriirvuke9st2j98ecsjmtbl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcxbhGQo6msEen2agZlFmdHnrQb7sPf74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "557355299582-b91ahpsvpriirvuke9st2j98ecsjmtbl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
