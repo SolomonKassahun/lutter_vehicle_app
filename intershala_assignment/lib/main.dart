@@ -12,16 +12,21 @@ import 'firebase_options.dart';
 
 void main() async{
   Bloc.observer = SampleObsever();
-  await Firebase.initializeApp(
-     options: DefaultFirebaseOptions.currentPlatform,
+  //  await Firebase.initializeApp();
+  WidgetsFlutterBinding.ensureInitialized(
+    
   );
+  await Firebase.initializeApp(
+    //  options: DefaultFirebaseOptions.currentPlatform,
+  );
+  
   runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
    MyApp({Key? key}) : super(key: key);
   
-VehicleDataRepository vehicleDataRepository = new VehicleDataRepository(vehicleDataProvider: VehicleDataProvider());
+VehicleDataRepository vehicleDataRepository =  VehicleDataRepository(vehicleDataProvider: VehicleDataProvider());
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {

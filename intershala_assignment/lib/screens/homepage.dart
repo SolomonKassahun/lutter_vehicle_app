@@ -53,7 +53,7 @@ class _HomepageState extends State<Homepage> {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 20.0, vertical: 20.0),
                       child: state.vehicle.isEmpty
-                          ? const Text("No Vehicles")
+                          ? const Center(child:  Text("No Vehicles"))
                           : Column(
                               children: state.vehicle
                                   .map((vehicle) => Card(
@@ -114,10 +114,11 @@ class _HomepageState extends State<Homepage> {
                                                       case ConnectionState.done:
                                                         imageUrl =
                                                             snapshot.data;
+                                                            
                                                         return CachedNetworkImage(
                                                           fit: BoxFit.fill,
-                                                          height: 12.0,
-                                                          width: 12.0,
+                                                          height: 50.0,
+                                                          width: 50.0,
                                                           imageUrl:
                                                               snapshot.data,
                                                           imageBuilder: (context,
@@ -127,12 +128,12 @@ class _HomepageState extends State<Homepage> {
                                                                         context)
                                                                     .size
                                                                     .width *
-                                                                0.00004,
+                                                              4,
                                                             height: MediaQuery.of(
                                                                         context)
                                                                     .size
                                                                     .height *
-                                                                0.004,
+                                                                4,
                                                             decoration:
                                                                 BoxDecoration(
                                                               shape: BoxShape
