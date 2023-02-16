@@ -14,8 +14,7 @@ void main() async{
   Bloc.observer = SampleObsever();
   //  await Firebase.initializeApp();
   WidgetsFlutterBinding.ensureInitialized(
-    
-  );
+    );
   await Firebase.initializeApp(
     //  options: DefaultFirebaseOptions.currentPlatform,
   );
